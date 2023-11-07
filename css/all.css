@@ -80,10 +80,9 @@ table {
   margin-bottom: 0px !important;
 }
 .main .top {
-  display: flex;
   position: absolute;
-  width: 75%;
-  top: -2px;
+  width: 100%;
+  top: 13px;
   z-index: 5;
 }
 .main .temple {
