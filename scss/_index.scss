@@ -1,0 +1,98 @@
+
+/* *{
+    outline: 1px solid black;
+} */
+
+.main{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .bg{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 0;
+    }
+    .navbar{
+        margin-bottom: 0px !important;
+    }
+    .top{
+        display: flex;
+        position: absolute;
+        width: 75%;
+        top: -2px;
+        z-index: 5;
+    }
+    .temple{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        
+    }
+    .moun_c{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+    }
+    .mountains_bg{
+        .moun_l{
+            position: absolute;
+            left: 0px;
+            z-index: 2;
+        }
+        .moun_r{
+            position: absolute;
+            right: 0px;
+            z-index: 2;
+        }
+    }
+    .mountains_back{
+        .moun_l{
+            position: absolute;
+            left: 0px;
+            z-index: 3;
+        }
+        .moun_r{
+            position: absolute;
+            right: 0px;
+            z-index: 3;
+        }
+    }
+    .mountains_front{
+        .moun_l{
+            position: absolute;
+            left: 0px;
+            z-index: 4;
+        }
+        .moun_r{
+            position: absolute;
+            right: 0px;
+            z-index: 4;
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 5;
+    }
+    .start{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 6;
+        width: 100%;
+        a{
+            margin-top: 50%;
+            text-align: center;
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+
+
