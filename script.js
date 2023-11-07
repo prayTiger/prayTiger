@@ -3,7 +3,7 @@ var animation = bodymovin.loadAnimation({
     rederer:'svg',
     loop: true,
     autoplay: true,
-    path: 'lanterns.json'
+    path: 'https://raw.githubusercontent.com/prayTiger/prayTiger/main/lanterns.json?token=GHSAT0AAAAAACJ7COAUFVREKL2ENJY4GO6AZKKD2BA'
 
 });
 
