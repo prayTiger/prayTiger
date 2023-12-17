@@ -1,3 +1,28 @@
 class="dropdown-toggle" data-toggle="dropdown"
 
 class="caret" >>下拉式選單的箭頭
+
+
+//首頁拔掉的navbar
+    <!--navbar-->
+    <nav class="navbar ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button> -->
+          <a class="navbar-brand" href="index.html">TigerGod</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="page1.html">基本認識</a></li>
+            <li><a href="page2.html">祭祀禮儀</a></li>
+            <li><a href="page3.html">傳說故事</a></li>
+            <li><a href="page4.html">廟宇介紹</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>

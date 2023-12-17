@@ -3,40 +3,52 @@
     outline: 1px solid black;
 } */
 
+body{
+    height: 100vh;
+}
+
+
+
 .main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100%;
     position: relative;
     img{
-        width: 100%;
+        width: 100%; 
     }
+
     .bg{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        z-index: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -5;
     }
-    .navbar{
-        margin-bottom: 0px !important;
-    }
+
     .top{
         position: absolute;
         width: 100%;
-        top: 51px;
         z-index: 5;
+        padding-top: 3px;
     }
     .temple{
         display: flex;
         justify-content: center;
         position: absolute;
         z-index: 3;
-        
     }
     .moun_c{
         display: flex;
         justify-content: center;
         position: absolute;
         z-index: 1;
+        
     }
     .mountains_bg{
+        display: flex;
+        justify-content: center;
+        align-items:center;
         .moun_l{
             position: absolute;
             left: 0px;
@@ -45,10 +57,13 @@
         .moun_r{
             position: absolute;
             right: 0px;
-            z-index: 2;
+            z-index: 2;  
         }
     }
     .mountains_back{
+        display: flex;
+        justify-content: center;
+        align-items:center;
         .moun_l{
             position: absolute;
             left: 0px;
@@ -61,6 +76,9 @@
         }
     }
     .mountains_front{
+        display: flex;
+        justify-content: center;
+        align-items:center;
         .moun_l{
             position: absolute;
             left: 0px;
@@ -77,21 +95,33 @@
         justify-content: center;
         position: absolute;
         z-index: 5;
-    }
-    .start{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        z-index: 6;
-        width: 100%;
-        a{
-            margin-top: 50%;
-            text-align: center;
-            img{
-                width: 50%;
-            }
+        img{
+            width: 80%;
         }
     }
+    .start{
+        position: absolute;
+        width: 100%;
+        margin-top: 38%;
+        z-index: 6;
+        a{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            width: 20%;
+        }
+        // a{
+        //     display: block;
+        //     text-align: center;
+        //     width: 200px;
+        //     height: 50px;
+        //     font-size: 36px;
+        //     color: red;
+        //     text-decoration: none;
+        // }
+    }
+
 }
 
 

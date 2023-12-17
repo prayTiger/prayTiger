@@ -1,0 +1,214 @@
+#page2{
+    background-color: $color_g;
+
+
+.content{
+    //margin-top: 60px;
+    h1{
+        font-family: 'Yuji Syuku', serif;
+        font-size: 50px;
+    }
+    h2{
+        font-family: 'Yuji Syuku', serif;
+        font-size: 36px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .p2_s0{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .p2_s0_div{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        .img{
+            width: 55%;
+        }
+        .text{
+            width: 30%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            
+            h1{
+                color: $color_y;
+                font-family: 'Yuji Syuku', serif;
+                text-align: right;
+            }
+            ul{
+                display: flex;
+                color: $main_color;
+                font-family: 'Noto Sans TC', sans-serif;
+                justify-content: flex-end;
+                
+                li{
+                    writing-mode: vertical-lr;
+                    height: 130px;
+                    text-align: center;
+                    border: $main_color 2px solid;
+                    margin: 0 5px;
+                    border-radius: 20px;
+                    padding: 0 3px;
+                    font-size: 18px;
+                    letter-spacing: 5px;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: $main_color;
+                    }
+                    a:hover{
+                        color: #fff;
+                    }
+                }
+                li:hover{
+                    border: $main_color 2px solid;
+                    background-color: $main_color;
+                    color: #fff;
+                    
+                }
+            }
+        }
+    }
+
+    .p2_s1{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        
+        img{
+            width: 100%;
+        }
+        .p2_s1_div{
+            display: flex;
+            flex-direction: column;
+            .text{
+                width: 100%;
+                text-align: center;
+                h2{
+                    color: $color_b;
+                }
+                p{
+                    padding-top: 20px;
+                }
+            }
+            .box{
+                display: flex;
+                align-content: center;
+                justify-content: space-between;
+                margin: 10px 0;
+                .img{
+                    width: 33%;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .p2_s1_div{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            width: 60%;
+            padding: 20px;
+        }
+    }
+
+    .p2_s2{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 80%;
+        }
+        h2{
+            color: $color_y;
+            text-align: center;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            .img{
+                width: 50%;
+                background-color: $main_color;
+            }
+            .text{
+                width: 50%;
+                padding: 20px;
+                h3{
+                    font-family: 'Yuji Syuku', serif;
+                    margin-top: 10px;
+                    color: $main_color;
+                }
+                p{
+                    color: #fff;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .p2_s3{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+        h2{
+            color: $main_color;
+            text-align: center;
+        }
+        .p2_s3_div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img{
+                margin: 20px 0;
+                width: 50%;
+            }
+            p{
+                margin-top: 10px;
+                color: #fff;
+                font-weight: 500;
+            }
+            
+        }
+    }
+
+
+}
+}

@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    align-content: stretch;
+    
+    .item{
+        
+        margin-left: 2px;
+        margin-right: 2px;
+        
+        text-align: center;
+        background-color: $main_color;
+        width: 25%;
+        a{
+            display: block;
+            height: 100vh;
+        }
+    }
+}

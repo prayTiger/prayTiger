@@ -1,17 +1,227 @@
-.part{
-    margin: 20px auto;
+
+
+
+
+#page1{
+    background-color: $color_b;
+
+
+
+
+
+.sub_menu{
+    z-index: 100;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    a{
+            display: block;
+            background-color: $main_color;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            margin: 5px;
+        }
 }
 
-.part1{
-    display: flex;
-    width: 80%;
-    .img{
+
+
+.content{
+    //margin-top: 60px;
+    h1{
+        font-family: 'Yuji Syuku', serif;
+        font-size: 50px;
+    }
+    h2{
+        font-family: 'Yuji Syuku', serif;
+        font-size: 36px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+
+    .p1_s0{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .p1_s0_div{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+
         img{
-        width: 300px;
+                width: 100%;
+            }
+
+        .img{
+            width: 50%;
+            
+        }
+        .text{
+            width: 30%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            
+            h1{
+                color: $color_y;  
+            }
+            p{
+                color: #fff;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
         }
     }
-    .content{
-        padding-left: 20px;
-        padding-right: 20px;
+
+    .p1_s1{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        .p1_s1_div{
+        
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .text{
+                width: 60%;
+                padding: 20px;
+                h2{
+                    color: $color_b;
+                }
+                p{
+                    padding-top: 20px;
+                }
+            }
+            .img{
+                width: 30%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
     }
+    
+
+    .p1_s2{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        .text{
+            text-align: center;
+            h2{
+                color: $color_y;
+            }
+            p{
+                padding-top: 20px;
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+    .p1_s3{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+        h2{
+            text-align: center;
+            color: $main_color;
+        }
+        p{
+            padding: 20px 0;
+            margin: 0;
+            text-align: center;
+            color: #fff;
+            font-weight: 500;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            p{
+                width: 60%;
+                margin: 0 25px;
+                span{
+                    color: $color_y;
+                }
+            }
+            .img{
+                width: 30%;
+            }
+            margin-bottom: 20px;
+        }
+        
+        
+        
+    }
+
+    .p1_s4{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+        h2{
+            color: $color_b;
+            margin-bottom: 20px;
+            margin-left: 15px;
+        }
+        .box{
+            margin: 10px;
+            padding: 20px 50px;
+            background-color: rgba(255, 255, 255, 0.7) ;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .text{
+                width: 75%;
+                h3{
+                    font-family: 'Yuji Syuku', serif;
+                    margin-top: 10px;
+                    color: $color_g;
+                }
+                p{
+                    margin: 0;
+                    padding-bottom: 10px;
+                    font-weight: 700;
+                }
+            }
+            .img{
+                width: 20%;
+            }
+            
+
+        }
+        
+    }
+
+
+
+}
+
+
 }

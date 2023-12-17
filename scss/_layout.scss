@@ -1,12 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
 .back{
     display: flex;
     justify-content: center;
     a{
         display: block;
         width: 100px;
-        background-color: aquamarine;
+        background-color: darkgoldenrod;
         font-size: 25px;
         text-align: center;
+    }
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-left: 10px;
+    background-color: transparent;
+    .logo{
+        a{
+            img{
+                width: 80px;
+            }
+        }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        li{
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            a{
+                display:block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 13px;
+
+            }
+            a:hover{
+                color: $color_y;
+                text-decoration: underline;
+                text-underline-offset: 8px;
+            }
+
+        }
     }
 }
 
