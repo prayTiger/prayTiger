@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*css reset*/
 @import url("https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400&family=Yuji+Syuku&display=swap");
@@ -103,6 +104,26 @@ html {
   color: #E9A93F;
   text-decoration: underline;
   text-underline-offset: 8px;
+}
+
+/* 網頁捲軸【寬度】 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* 網頁捲軸【背景】顏色 */
+::-webkit-scrollbar-track {
+  background: #F1F3F4;
+}
+
+/* 網頁捲軸【把手】顏色 */
+::-webkit-scrollbar-thumb {
+  background: #8FC8B5;
+}
+
+/* 網頁捲軸【滑過時】把手的顏色 */
+::-webkit-scrollbar-thumb:hover {
+  background: #E9A93F;
 }
 
 /* *{
@@ -651,6 +672,83 @@ body {
 #page4 {
   background-color: #4D7B78;
 }
+#page4 .content h1 {
+  font-family: "Yuji Syuku", serif;
+  font-size: 50px;
+}
+#page4 .content h2 {
+  font-family: "Yuji Syuku", serif;
+  font-size: 36px;
+}
+#page4 .content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#page4 .content img {
+  width: 100%;
+}
 #page4 .content section {
   height: 100vh;
+}
+#page4 .content #p4_s0 {
+  display: flex;
+}
+#page4 .content #p4_s0 .bg {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  width: 100%;
+  overflow: hidden;
+}
+#page4 .content #p4_s0 .bg img {
+  width: auto;
+  height: -webkit-fill-available;
+}
+#page4 .content #p4_s0 .intro {
+  margin: 8% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#page4 .content #p4_s0 .intro .box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#page4 .content #p4_s0 .intro .box h1 {
+  color: #fff;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+#page4 .content #p4_s0 .intro .box p {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+#page4 .content #p4_s1 {
+  display: flex;
+  justify-content: center;
+}
+#page4 .content #p4_s1 .box {
+  padding: 40px;
+  width: 80%;
+}
+#page4 .content #p4_s2 {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+#page4 .content #p4_s2 .pic360 {
+  width: 80%;
+  padding: 40px;
+}
+#page4 .content #p4_s2 .pic360 h2 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=all.css.map */

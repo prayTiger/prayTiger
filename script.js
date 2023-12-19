@@ -1,9 +1,9 @@
 var animation = bodymovin.loadAnimation({
-    container: document.getElementById('lantern1'),
+    container: document.getElementById('lantern'),
     rederer:'svg',
     loop: true,
     autoplay: true,
-    path: 'https://raw.githubusercontent.com/LiJing1219/TigerGod/main/lanterns.json'
+    path: 'https://raw.githubusercontent.com/prayTiger/Json/main/lanterns.json'
 
 });
 

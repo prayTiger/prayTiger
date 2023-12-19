@@ -20,7 +20,7 @@
         "w": 1920,
         "h": 1080,
         "u": "",
-        "p": "img/image_0.png",
+        "p": "img/index/anim_lanterns/image_0.png",
         "e": 1
       },
       {
@@ -28,7 +28,7 @@
         "w": 1920,
         "h": 1080,
         "u": "",
-        "p": "img/image_1.png",
+        "p": "img/index/anim_lanterns/image_1.png",
         "e": 1
       },
       {
@@ -36,7 +36,7 @@
         "w": 1920,
         "h": 1080,
         "u": "",
-        "p": "img/image_2.png",
+        "p": "img/index/anim_lanterns/image_2.png",
         "e": 1
       },
       {
@@ -44,7 +44,7 @@
         "w": 1920,
         "h": 1080,
         "u": "",
-        "p": "img/image_3.png",
+        "p": "img/index/anim_lanterns/image_3.png",
         "e": 1
       },
       {
@@ -52,7 +52,7 @@
         "w": 1920,
         "h": 1080,
         "u": "",
-        "p": "img/image_4.png",
+        "p": "img/index/anim_lanterns/image_4.png",
         "e": 1
       }
     ],
