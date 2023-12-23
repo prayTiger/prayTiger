@@ -1,4 +1,5 @@
 #page2{
+
     background-color: $color_g;
 
 
@@ -36,6 +37,7 @@
         }
         .img{
             width: 55%;
+            animation: fadeInLeft 1.5s ease-in;
         }
         .text{
             width: 30%;
@@ -47,14 +49,16 @@
                 color: $color_y;
                 font-family: 'Yuji Syuku', serif;
                 text-align: right;
+                animation: fadeInRight 1.5s ease-in-out;
             }
             ul{
                 display: flex;
                 color: $main_color;
                 font-family: 'Noto Sans TC', sans-serif;
                 justify-content: flex-end;
-                
+
                 li{
+                    animation: fadeInDown 1.5s ease-in-out;
                     writing-mode: vertical-lr;
                     height: 130px;
                     text-align: center;
@@ -68,6 +72,11 @@
                         display: block;
                         text-decoration: none;
                         color: $main_color;
+
+                        /* 漸變 */
+                        transition-property: all;
+                        transition-duration: .6s;
+                        transition-timing-function: ease;
                     }
                     a:hover{
                         color: #fff;
@@ -117,6 +126,33 @@
                     background-color: #fff;
                     border-radius: 50%;
                     margin: 0 10px;
+                    transition: transform 0.3s ease-in-out;
+                }
+                .img:hover{
+                    transform: scale(0.9);
+                }
+                img{
+                    transition: transform 0.3s ease-in-out;
+                }
+                img:hover{
+                    transform: scale(1.2) rotate(10deg);
+                    
+                    
+                }
+                .img span {
+                    
+                    font-family: 'Yuji Syuku', serif;
+                    font-size: 36px;
+                    color: $color_b;
+                    position: absolute;
+                    opacity: 0;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.5s;
+                }
+                .img:hover span{
+                    opacity: 1;
                 }
             }
         }
@@ -141,6 +177,7 @@
 
     .p2_s2{
         width: 85%;
+        height: 100vh;
         margin: 0 auto;
         padding: 20px 20px;
         display: flex;
@@ -148,11 +185,13 @@
         justify-content: center;
         align-items: center;
         img{
-            width: 80%;
+            width: 60%;
         }
         h2{
             color: $color_y;
             text-align: center;
+            margin-bottom: 30px;
+            
         }
         .box{
             display: flex;
@@ -160,10 +199,14 @@
             .img{
                 width: 50%;
                 background-color: $main_color;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .text{
                 width: 50%;
-                padding: 20px;
+                padding: 20px 30px;
                 h3{
                     font-family: 'Yuji Syuku', serif;
                     margin-top: 10px;
@@ -196,10 +239,31 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            .img{
-                margin: 20px 0;
-                width: 50%;
+
+            .box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    font-family: 'Yuji Syuku', serif;
+                    color: #fff;
+                    background: linear-gradient(180deg, 
+                    rgba(255,255,255,0) 0%, 
+                    rgba(255,255,255,0) 40%, 
+                    rgba($color_b,1) 40%, 
+                    rgba($color_b,1) 75%,
+                    rgba(255,255,255,0) 75%, 
+                    rgba(255,255,255,0) 100%);
+                    padding: 5px 5px;
+
+                }
+                .img{
+                    margin: 20px 0;
+                    width: 70%;
+                }
             }
+            
             p{
                 margin-top: 10px;
                 color: #fff;

@@ -3,125 +3,158 @@
     outline: 1px solid black;
 } */
 
-body{
+#index{
     height: 100vh;
+        img{
+            width: 100%;
+        }
+        .bg{
+            #index_bg{
+                position: absolute;
+                z-index: -1;
+            }
+            .box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                margin-top: 8%;
+
+                .logo{
+                    width: 35%;
+                    }
+                .btn{
+                    width: 15%;
+                    transition: transform 0.3s ease;
+                }
+                .btn:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
 }
 
 
 
-.main{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height:100%;
-    position: relative;
-    img{
-        width: 100%; 
-    }
+/*舊的切版*/
+// .main{
+//     display: flex;
+//     justify-content: center;
+//     align-items:center;
+//     height:100%;
+//     position: relative;
+//     img{
+//         width: 100%; 
+//     }
 
-    .bg{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: -5;
-    }
+//     .bg{
+//     display: flex;
+//     justify-content: center;
+//     position: absolute;
+//     z-index: -5;
+//     }
 
-    .top{
-        position: absolute;
-        width: 100%;
-        z-index: 5;
-        padding-top: 3px;
-    }
-    .temple{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        z-index: 3;
-    }
-    .moun_c{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        z-index: 1;
+//     .top{
+//         position: absolute;
+//         width: 100%;
+//         z-index: 5;
+//         padding-top: 3px;
+//     }
+//     .temple{
+//         display: flex;
+//         justify-content: center;
+//         position: absolute;
+//         z-index: 3;
+//     }
+//     .moun_c{
+//         display: flex;
+//         justify-content: center;
+//         position: absolute;
+//         z-index: 1;
         
-    }
-    .mountains_bg{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        .moun_l{
-            position: absolute;
-            left: 0px;
-            z-index: 2;
-        }
-        .moun_r{
-            position: absolute;
-            right: 0px;
-            z-index: 2;  
-        }
-    }
-    .mountains_back{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        .moun_l{
-            position: absolute;
-            left: 0px;
-            z-index: 3;
-        }
-        .moun_r{
-            position: absolute;
-            right: 0px;
-            z-index: 3;
-        }
-    }
-    .mountains_front{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        .moun_l{
-            position: absolute;
-            left: 0px;
-            z-index: 4;
-        }
-        .moun_r{
-            position: absolute;
-            right: 0px;
-            z-index: 4;
-        }
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        z-index: 5;
-        img{
-            width: 80%;
-        }
-    }
-    .start{
-        position: absolute;
-        width: 100%;
-        margin-top: 38%;
-        z-index: 6;
-        a{
-            display: flex;
-            justify-content: center;
-        }
-        img{
-            width: 20%;
-        }
-        // a{
-        //     display: block;
-        //     text-align: center;
-        //     width: 200px;
-        //     height: 50px;
-        //     font-size: 36px;
-        //     color: red;
-        //     text-decoration: none;
-        // }
-    }
+//     }
+//     .mountains_bg{
+//         display: flex;
+//         justify-content: center;
+//         align-items:center;
+//         .moun_l{
+//             position: absolute;
+//             left: 0px;
+//             z-index: 2;
+//         }
+//         .moun_r{
+//             position: absolute;
+//             right: 0px;
+//             z-index: 2;  
+//         }
+//     }
+//     .mountains_back{
+//         display: flex;
+//         justify-content: center;
+//         align-items:center;
+//         .moun_l{
+//             position: absolute;
+//             left: 0px;
+//             z-index: 3;
+//         }
+//         .moun_r{
+//             position: absolute;
+//             right: 0px;
+//             z-index: 3;
+//         }
+//     }
+//     .mountains_front{
+//         display: flex;
+//         justify-content: center;
+//         align-items:center;
+//         .moun_l{
+//             position: absolute;
+//             left: 0px;
+//             z-index: 4;
+//         }
+//         .moun_r{
+//             position: absolute;
+//             right: 0px;
+//             z-index: 4;
+//         }
+//     }
+//     .logo{
+//         display: flex;
+//         justify-content: center;
+//         position: absolute;
+//         z-index: 5;
+//         img{
+//             width: 80%;
+//         }
+//     }
+//     .start{
+//         position: absolute;
+//         width: 100%;
+//         margin-top: 38%;
+//         z-index: 6;
+//         a{
+//             display: flex;
+//             justify-content: center;
+//         }
+//         img{
+//             width: 20%;
+//         }
+//         // a{
+//         //     display: block;
+//         //     text-align: center;
+//         //     width: 200px;
+//         //     height: 50px;
+//         //     font-size: 36px;
+//         //     color: red;
+//         //     text-decoration: none;
+//         // }
+//     }
 
-}
+// }
+
+
 
 

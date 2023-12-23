@@ -1,12 +1,5 @@
-
-
-
-
 #page1{
     background-color: $color_b;
-
-
-
 
 
 .sub_menu{
@@ -15,22 +8,30 @@
     right: 20px;
     top: 50%;
     a{
-            display: block;
-            background-color: $main_color;
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            margin: 5px;
-        }
+        display: block;
+        border: 2px $main_color solid;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+    a:hover{
+        background-color: transparent;
+        background-color: $main_color;
+        
+    }
 }
 
-
+.header{
+    background-color: $color_b;
+}
 
 .content{
     //margin-top: 60px;
     h1{
         font-family: 'Yuji Syuku', serif;
         font-size: 50px;
+        
     }
     h2{
         font-family: 'Yuji Syuku', serif;
@@ -52,14 +53,27 @@
     }
     .p1_s0_div{
         
+        /* 定義動畫關鍵幀 */
+        @keyframes slideIn {
+            from {
+            transform: translate(-100%,-50%);
+            }
+            to {
+            transform: translate(0,0);
+            }
+        }
+        
+        
+
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
 
         img{
-                width: 100%;
-            }
+            animation: slideIn 1.5s ease-in-out; 
+            width: 100%;
+           }
 
         .img{
             width: 50%;
@@ -70,9 +84,11 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
+            animation: fadeInRight 1s ease-in-out;
             
             h1{
                 color: $color_y;  
+                text-align: center;
             }
             p{
                 color: #fff;
@@ -105,6 +121,7 @@
                 }
             }
             .img{
+                margin-right: 5%;
                 width: 30%;
                 img{
                     width: 100%;
@@ -167,6 +184,7 @@
             }
             .img{
                 width: 30%;
+                background: radial-gradient(circle closest-side at center, #9d906a 10%, $color_b);
             }
             margin-bottom: 20px;
         }
@@ -197,6 +215,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            /* 漸變 */
+            transition-property: all;
+            transition-duration: .6s;
+            transition-timing-function: ease;
             .text{
                 width: 75%;
                 h3{
@@ -212,6 +235,12 @@
             }
             .img{
                 width: 20%;
+            }
+            img{
+                transition: transform 0.3s ease;
+            }
+            img:hover{
+                transform: scale(1.2);
             }
             
 
