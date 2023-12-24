@@ -2,6 +2,7 @@
 
     background-color: $color_g;
 
+    
 
 .content{
     //margin-top: 60px;
@@ -148,7 +149,7 @@
                     opacity: 0;
                     bottom: -5px;
                     left: 50%;
-                    transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%); //置中
                     transition: 0.5s;
                 }
                 .img:hover span{

@@ -95,16 +95,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.back {
+.btn_back {
   display: flex;
   justify-content: center;
 }
-.back a {
-  display: block;
-  width: 100px;
-  background-color: darkgoldenrod;
-  font-size: 25px;
-  text-align: center;
+.btn_back a {
+  width: 150px;
 }
 
 .header {
@@ -162,6 +158,33 @@ html {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
 }
 
+.reveal.reveal_l {
+  position: relative;
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.reveal_r {
+  position: relative;
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.reveal_b {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateX(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /* *{
     outline: 1px solid black;
 } */
@@ -187,6 +210,11 @@ html {
 }
 #index .bg .box .logo {
   width: 35%;
+  transition: transform;
+}
+#index .bg .box .logo:hover {
+  animation-play-state: paused;
+  transform: scale(1.3);
 }
 #index .bg .box .btn {
   width: 15%;
@@ -194,6 +222,25 @@ html {
 }
 #index .bg .box .btn:hover {
   transform: scale(1.1);
+}
+@keyframes scaleDraw {
+  /*定義關鍵幀、scaleDrew是需要繫結到選擇器的關鍵幀名稱*/
+  0% {
+    transform: scale(0.9); /*開始為原始大小*/
+  }
+  25% {
+    transform: scale(1); /*放大1.1倍*/
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1);
+  }
+}
+#index .ballon {
+  /*可以簡寫為*/
+  animation: scaleDraw 8s ease-in-out infinite;
 }
 
 /*舊的切版*/
@@ -326,6 +373,10 @@ html {
 }
 #page1 .content .p1_s1 .p1_s1_div .img img {
   width: 100%;
+  transition: transform 0.3s ease;
+}
+#page1 .content .p1_s1 .p1_s1_div .img img:hover {
+  transform: scale(1.1);
 }
 #page1 .content .p1_s2 {
   width: 85%;
@@ -348,6 +399,7 @@ html {
 }
 #page1 .content .p1_s3 {
   width: 85%;
+  height: 100vh;
   margin: 0 auto;
   padding: 20px 20px;
   display: flex;
@@ -359,6 +411,7 @@ html {
 #page1 .content .p1_s3 h2 {
   text-align: center;
   color: #8FC8B5;
+  margin-top: 50px;
 }
 #page1 .content .p1_s3 p {
   padding: 20px 0;
@@ -721,29 +774,21 @@ html {
 }
 #page3_1 .content section .box .ani {
   position: relative;
-  margin-top: 5%;
+  margin-top: -5%;
   width: 80%;
-  height: 100vh;
+  height: 80vh;
 }
-#page3_1 .content section .box .ani #tudi4-1 {
+#page3_1 .content section .box .ani #tudi_bg {
   width: 100%;
   position: absolute;
   z-index: -1;
   cursor: pointer;
 }
-#page3_1 .content section .box .ani #tudi4-2 {
+#page3_1 .content section .box .btn_back {
   position: absolute;
-  z-index: 2;
-  cursor: pointer;
-}
-#page3_1 .content section .box .ani #tudi4-3 {
-  position: absolute;
-  z-index: 3;
-  cursor: pointer;
-}
-#page3_1 .content section .box .ani .back {
-  position: absolute;
-  bottom: -700px;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 #page3_2 {
@@ -799,7 +844,7 @@ html {
   }
 }
 #page4 .content .p4_s0_div img {
-  animation: slideIn 1.5s ease-in-out;
+  animation: fadeInLeft 1.5s ease-in-out;
   width: 100%;
 }
 #page4 .content .p4_s0_div .img {
@@ -813,7 +858,7 @@ html {
   animation: fadeInRight 1s ease-in-out;
 }
 #page4 .content .p4_s0_div .text h1 {
-  color: #E9A93F;
+  color: #045372;
   text-align: center;
 }
 #page4 .content .p4_s0_div .text p {

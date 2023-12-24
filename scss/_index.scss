@@ -25,7 +25,12 @@
 
                 .logo{
                     width: 35%;
+                    transition: transform;
                     }
+                .logo:hover{
+                    animation-play-state: paused;
+                    transform: scale(1.3);
+                }
                 .btn{
                     width: 15%;
                     transition: transform 0.3s ease;
@@ -34,6 +39,31 @@
                     transform: scale(1.1);
                 }
             }
+        }
+        @keyframes scaleDraw {
+
+            /*定義關鍵幀、scaleDrew是需要繫結到選擇器的關鍵幀名稱*/
+            0% {
+                transform: scale(0.9);/*開始為原始大小*/
+            }
+
+            25% {
+                transform: scale(1);/*放大1.1倍*/
+            }
+
+            50% {
+                transform: scale(0.9);
+            }
+
+            75% {
+                transform: scale(1);
+            }
+        }
+
+        .ballon {
+            /*可以簡寫為*/
+            animation: scaleDraw 8s ease-in-out infinite; 
+            // -webkit-animation: scaleDraw 5s ease-in-out infinite;
         }
 }
 
