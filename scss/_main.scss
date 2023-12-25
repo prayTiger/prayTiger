@@ -1,24 +1,65 @@
-#main{
-    body{
+#main {
+    body {
         height: 100vh;
+        
     }
-    
-    .box{
+
+    .box {
         display: flex;
         align-content: stretch;
-        
-        .item{
+        justify-content: space-around;
+        background-color: $color_b;
+
+        img {
+            width: 100%;
+        }
+
+        .item {
+            // margin-left: 2px;
+            // margin-right: 2px;
             
-            margin-left: 2px;
-            margin-right: 2px;
-            
-            text-align: center;
-            background-color: $main_color;
-            width: 25%;
-            a{
+            width: 18%;
+            transition: transform 0.3s ease;
+            a {
                 display: block;
                 height: 100vh;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    writing-mode: vertical-lr;
+                    font-family: 'Yuji Syuku', serif;
+                    font-size: 40px;
+                    letter-spacing: 5px;
+                    color: $color_y;
+                    // -webkit-text-stroke: 1px #000;
+                    text-shadow: 1.5px 1.5px #333;
+                    position: absolute;
+                    z-index: 5;
+                    //opacity: 0;
+                    top: 35%;
+                    left: 50%;
+                    transform: translate(-50%, -50%); //置中
+                    transition: 0.5s;
+                }
+                // span:hover{
+                //     color: $color_y;
+                // }
             }
         }
+        .item:hover{
+            transform: scale(1.05);
+            a{
+                span{
+                    color: #fff;
+                    -webkit-text-stroke: 0px #000;
+                    
+                    //opacity: 1;
+                }
+            }
+        }
+
     }
 }

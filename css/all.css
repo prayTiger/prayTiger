@@ -191,12 +191,21 @@ html {
 #index {
   height: 100vh;
 }
+#index body {
+  height: 100vh;
+}
+#index .bg {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
 #index img {
   width: 100%;
 }
 #index .bg #index_bg {
   position: absolute;
   z-index: -1;
+  width: auto;
 }
 #index .bg .box {
   display: flex;
@@ -206,7 +215,7 @@ html {
   position: absolute;
   z-index: 1;
   width: 100%;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 #index .bg .box .logo {
   width: 35%;
@@ -218,10 +227,28 @@ html {
 }
 #index .bg .box .btn {
   width: 15%;
+  position: relative;
   transition: transform 0.3s ease;
+}
+#index .bg .box .btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Yuji Syuku", serif;
+  font-size: 30px;
+  color: #fff;
+}
+#index .bg .box .btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 #index .bg .box .btn:hover {
   transform: scale(1.1);
+}
+#index .bg .box .btn:hover .span:hover {
+  position: absolute;
 }
 @keyframes scaleDraw {
   /*定義關鍵幀、scaleDrew是需要繫結到選擇器的關鍵幀名稱*/
@@ -250,17 +277,44 @@ html {
 #main .box {
   display: flex;
   align-content: stretch;
+  justify-content: space-around;
+  background-color: #045372;
+}
+#main .box img {
+  width: 100%;
 }
 #main .box .item {
-  margin-left: 2px;
-  margin-right: 2px;
-  text-align: center;
-  background-color: #8FC8B5;
-  width: 25%;
+  width: 18%;
+  transition: transform 0.3s ease;
 }
 #main .box .item a {
   display: block;
   height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .box .item a span {
+  writing-mode: vertical-lr;
+  font-family: "Yuji Syuku", serif;
+  font-size: 40px;
+  letter-spacing: 5px;
+  color: #E9A93F;
+  text-shadow: 1.5px 1.5px #333;
+  position: absolute;
+  z-index: 5;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+#main .box .item:hover {
+  transform: scale(1.05);
+}
+#main .box .item:hover a span {
+  color: #fff;
+  -webkit-text-stroke: 0px #000;
 }
 
 #page1 {
@@ -736,23 +790,67 @@ html {
   background-color: #045372;
 }
 #page3 .content {
-  margin-top: -100px;
+  margin-top: 60px;
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  align-items: center;
 }
-#page3 .content img {
+#page3 .content .section {
+  width: 80%;
+  position: relative;
   display: flex;
-  justify-content: center;
-  width: auto;
-  height: 100vh;
+  justify-items: center;
 }
-#page3 .content .s_l {
+#page3 .content .section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#page3 .content .s {
   width: 50%;
+  height: 78vh;
 }
-#page3 .content .s_r {
+#page3 .content .s span {
+  writing-mode: vertical-lr;
+  font-family: "Yuji Syuku", serif;
+  font-size: 32px;
+  color: #fff;
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+#page3 .content .s:hover span {
+  opacity: 1;
+}
+#page3 .content .s:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  cursor: pointer;
+}
+#page3 .content .l {
   width: 50%;
+  background-image: url("/prayTiger/img/page3/menu_tudi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-
+#page3 .content .l span {
+  top: 50%;
+  left: 25%;
+}
+#page3 .content .r {
+  width: 50%;
+  background-image: url("/prayTiger/img/page3/menu_baoseng.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#page3 .content .r span {
+  top: 50%;
+  right: 20%;
+}
 #page3_1 {
   background-color: #045372;
 }
@@ -774,8 +872,8 @@ html {
 }
 #page3_1 .content section .box .ani {
   position: relative;
-  margin-top: -5%;
-  width: 80%;
+  margin-top: -10%;
+  width: 75%;
   height: 80vh;
 }
 #page3_1 .content section .box .ani #tudi_bg {
@@ -795,7 +893,12 @@ html {
   background-color: #045372;
 }
 #page3_2 .content {
+  margin: auto;
   margin-top: 60px;
+  width: 60%;
+}
+#page3_2 .content #test {
+  border: 1px white solid;
 }
 
 #page4 {

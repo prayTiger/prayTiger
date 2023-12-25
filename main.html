@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"> 
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-      
-        <link rel="stylesheet" href="./css/all.css">
-      
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-         
-        <title>祈虎TigerGod</title>
-      
-      </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img\favicon.ico" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+  <link rel="stylesheet" href="./css/all.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title>祈虎TigerGod</title>
+
+</head>
+
 <body id="main" style="overflow-y: hidden; overflow-x: hidden;">
-    <div class="box">
-      <div class="item" style="background-color: wheat;"><a target="_self" href=index.html>logo</a></div>
-      <div class="item"><a target="_self" href=page1.html>基本認識</a></div>
-      <div class="item"><a target="_self" href=page2.html>祭祀禮儀</a></div>
-      <div class="item"><a target="_self" href=page3.html>傳說故事</a></div>
-      <div class="item"><a target="_self" href=page4.html>尋找虎爺</a></div>
+  <div class="box">
+    <div class="item">
+      <a target="_self" href=index.html>
+        <img src="img\logo.png" alt="">
+      </a>
     </div>
+    <div class="item">
+      <a target="_self" href=page1.html>
+        <span>認識虎爺</span>
+        <div id="menu_1" class="bodymovinanim"></div>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_self" href=page2.html>
+        <span>祭祀禮儀</span>
+        <div id="menu_2" class="bodymovinanim"></div>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_self" href=page3.html>
+        <span>傳說故事</span>
+        <div id="menu_3" class="bodymovinanim"></div>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_self" href=page4.html>
+        <span>尋找虎爺</span>
+        <div id="menu_3" class="bodymovinanim"></div>
+      </a>
+    </div>
+    <script src="./script.js"></script>
+  </div>
+  <script>
+    /*menu*/
+    var menu = document.querySelector('.bodymovinanim');
+
+    var animationMenu = lottie.loadAnimation({
+      container: document.getElementById('menu_1'),
+      rederer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: "https://raw.githubusercontent.com/prayTiger/Json/main/table1.json"
+    });
+
+    var directionMenu = 1;
+    menu.addEventListener('mouseenter', (e) => {
+      animationMenu.setDirection(directionMenu);
+      animationMenu.play();
+    });
+
+    menu.addEventListener('mouseleave', (e) => {
+      animationMenu.setDirection(-directionMenu);
+      animationMenu.play();
+    });
+  </script>
 
 </body>
-</html> 
+
+</html>

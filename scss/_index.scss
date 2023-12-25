@@ -4,6 +4,16 @@
 } */
 
 #index{
+    body{
+        height: 100vh;
+    }
+    .bg{
+        display: flex;
+        height: 100%;
+        //justify-content: center;
+        align-items:center;
+    }
+
     height: 100vh;
         img{
             width: 100%;
@@ -12,6 +22,7 @@
             #index_bg{
                 position: absolute;
                 z-index: -1;
+                width: auto;
             }
             .box{
                 display: flex;
@@ -21,7 +32,7 @@
                 position: absolute;
                 z-index: 1;
                 width: 100%;
-                margin-top: 8%;
+                margin-top: 5%;
 
                 .logo{
                     width: 35%;
@@ -33,10 +44,29 @@
                 }
                 .btn{
                     width: 15%;
+                    position: relative;
                     transition: transform 0.3s ease;
+                    span{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-family: 'Yuji Syuku', serif;
+                        font-size: 30px;
+                        color: #fff;
+                    }
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
                 .btn:hover{
                     transform: scale(1.1);
+                    .span:hover{
+                        position: absolute;
+                        
+                    }
                 }
             }
         }
