@@ -126,8 +126,12 @@
             display: flex;
             justify-content: center;
             .box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 padding: 40px;
                 width: 80%;
+                color: #fff;
             }
             
         }

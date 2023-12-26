@@ -469,9 +469,9 @@ html {
 }
 #page1 .content .p1_s3 {
   width: 85%;
-  height: 100vh;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 30px 30px;
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
 }
@@ -1026,8 +1026,12 @@ html {
   justify-content: center;
 }
 #page4 .content #p4_s1 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 40px;
   width: 80%;
+  color: #fff;
 }
 #page4 .content #p4_s2 {
   height: auto;

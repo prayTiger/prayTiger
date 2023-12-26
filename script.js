@@ -225,36 +225,36 @@ function playT9_1() {
 
 playT1();
 
-let click = 0;
+var Tclick = 0;
 let deleteBG = true;
 function T_Previous() {
     // lottie.destroy();
-    if (click <= 0) {
-        click = 0;
-        console.log("click=%d", click);
+    if (Tclick <= 0) {
+        Tclick = 0;
+        console.log("click=%d", Tclick);
     } else {
-        click--;
+        Tclick--;
         deleteBG = true;
-        console.log("click=%d, deleteBG=t", click);
+        console.log("click=%d, deleteBG=t", Tclick);
         switchPageT();
     }
 
 }
 function T_Next() {
     // lottie.destroy();
-    if (click < 11) {
-        click++;
+    if (Tclick < 11) {
+        Tclick++;
         deleteBG = false;
-        console.log("click=%d, deleteBG=f", click);
+        console.log("click=%d, deleteBG=f", Tclick);
         switchPageT();
     } else {
-        click = 11;
-        console.log("click=%d", click);
+        Tclick = 11;
+        console.log("click=%d", Tclick);
     }
 }
 
 function switchPageT() {
-    switch (click) {
+    switch (Tclick) {
         case 0: {
             lottie.destroy('tudi1-1');
             break;
@@ -432,32 +432,24 @@ function switchPageT() {
 
 
 /*保生大帝*/
-// function playB() {
-//     lottie.loadAnimation({
-//         container: document.getElementById('bao_bg'),
-//         rederer: 'svg',
-//         loop: true,
-//         autoplay: true,
-//         name: 'bao4',
-//         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4.json'
-//     });
-//     lottie.loadAnimation({
-//         container: document.getElementById('bao_main'),
-//         rederer: 'svg',
-//         loop: true,
-//         autoplay: true,
-//         name: 'bao4-2',
-//         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4-1.json'
-//     });
-//     lottie.loadAnimation({
-//         container: document.getElementById('bao_main2'),
-//         rederer: 'svg',
-//         loop: true,
-//         autoplay: true,
-//         name: 'bao4-3',
-//         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao.json'
-//     });
-// }
+function playB() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao1.json'
+    });
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao1-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao1-1.json'
+    });
+}
 function playB1() {
     lottie.loadAnimation({
         container: document.getElementById('bao_bg'),
@@ -667,14 +659,15 @@ function playB9_1() {
     
 //     path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4-3.json'
 // });
-// playB();
 
-click = 0;
+playB();
+
+click = 1;
 deleteBG = true;
 function B_Previous() {
     // lottie.destroy();
-    if (click <= 0) {
-        click = 0;
+    if (click <= 1) {
+        click = 1;
         console.log("click=%d", click);
     } else {
         click--;
@@ -699,18 +692,11 @@ function B_Next() {
 
 function switchPageB(){
     switch (click) {
-        case 0:{
-            lottie.destroy('bao1-1');
-            break;
-        }
+        
         case 1: {
-            if (deleteBG == false) {
-                playB1();
-                playB1_1();
-                lottie.play();
-            } else {
-                
-            }
+            lottie.destroy('bao2');
+            lottie.destroy('bao2-1');
+            playB();
             break;
         }
         case 2: {
@@ -721,7 +707,11 @@ function switchPageB(){
                 playB2_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao3');
+                lottie.destroy('bao3-1');
+                playB2();
+                playB2_1();
+                lottie.play();
             }
             break;
         }
@@ -733,7 +723,11 @@ function switchPageB(){
                 playB3_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao4');
+                lottie.destroy('bao4-1');
+                playB3();
+                playB3_1();
+                lottie.play();
             }
             break;
         }
@@ -745,7 +739,10 @@ function switchPageB(){
                 playB4_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao4-2');
+                lottie.destroy('bao4-3');
+                playB4_1();
+                lottie.play();
             }
             break;
         }
@@ -756,7 +753,12 @@ function switchPageB(){
                 playB4_3();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao5');
+                lottie.destroy('bao5-1');
+                playB4();
+                playB4_2();
+                playB4_3();
+                lottie.play();
             }
             break;
         }
@@ -769,7 +771,11 @@ function switchPageB(){
                 playB5_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao6');
+                lottie.destroy('bao6-1');
+                playB5();
+                playB5_1();
+                lottie.play();
             }
             break;
         }
@@ -781,7 +787,11 @@ function switchPageB(){
                 playB6_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao7');
+                lottie.destroy('bao7-1');
+                playB6();
+                playB6_1();
+                lottie.play();
             }
             break;
         }
@@ -793,7 +803,11 @@ function switchPageB(){
                 playB7_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao8');
+                lottie.destroy('bao8-1');
+                playB7();
+                playB7_1();
+                lottie.play();
             }
             break;
         }
@@ -805,7 +819,11 @@ function switchPageB(){
                 playB8_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao9');
+                lottie.destroy('bao9-1');
+                playB8();
+                playB8_1();
+                lottie.play();
             }
             break;
         }
@@ -817,7 +835,11 @@ function switchPageB(){
                 playB9_1();
                 lottie.play();
             } else {
-                
+                lottie.destroy('bao9');
+                lottie.destroy('bao9-1');
+                playT9();
+                playT9_1();
+                lottie.play();
             }
             break;
         }
