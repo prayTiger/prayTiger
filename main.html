@@ -19,59 +19,116 @@
 
 <body id="main" style="overflow-y: hidden; overflow-x: hidden;">
   <div class="box">
-    <div class="item">
+    <div class="item logo">
       <a target="_self" href=index.html>
         <img src="img\logo.png" alt="">
       </a>
     </div>
-    <div class="item">
+    <div class="item menu">
       <a target="_self" href=page1.html>
         <span>認識虎爺</span>
-        <div id="menu_1" class="bodymovinanim"></div>
+        <div id="menu_1" class="bodymovinanim1 ani"></div>
       </a>
     </div>
-    <div class="item">
+    <div class="item menu">
       <a target="_self" href=page2.html>
         <span>祭祀禮儀</span>
-        <div id="menu_2" class="bodymovinanim"></div>
+        <div id="menu_2" class="bodymovinanim2 ani"></div>
       </a>
     </div>
-    <div class="item">
+    <div class="item menu">
       <a target="_self" href=page3.html>
         <span>傳說故事</span>
-        <div id="menu_3" class="bodymovinanim"></div>
+        <div id="menu_3" class="bodymovinanim3 ani"></div>
       </a>
     </div>
-    <div class="item">
+    <div class="item menu">
       <a target="_self" href=page4.html>
         <span>尋找虎爺</span>
-        <div id="menu_3" class="bodymovinanim"></div>
+        <div id="menu_4" class="bodymovinanim4 ani"></div>
       </a>
     </div>
     <script src="./script.js"></script>
   </div>
   <script>
     /*menu*/
-    var menu = document.querySelector('.bodymovinanim');
-
-    var animationMenu = lottie.loadAnimation({
+    //1
+    var menu = document.querySelector('.bodymovinanim1');
+    var animationMenu1 = lottie.loadAnimation({
       container: document.getElementById('menu_1'),
       rederer: 'svg',
       loop: false,
       autoplay: false,
       path: "https://raw.githubusercontent.com/prayTiger/Json/main/table1.json"
     });
-
     var directionMenu = 1;
     menu.addEventListener('mouseenter', (e) => {
-      animationMenu.setDirection(directionMenu);
-      animationMenu.play();
+      animationMenu1.setDirection(directionMenu);
+      animationMenu1.play();
     });
 
     menu.addEventListener('mouseleave', (e) => {
-      animationMenu.setDirection(-directionMenu);
-      animationMenu.play();
+      animationMenu1.setDirection(-directionMenu);
+      animationMenu1.stop();
     });
+    //2
+    var menu = document.querySelector('.bodymovinanim2');
+    var animationMenu2 = lottie.loadAnimation({
+      container: document.getElementById('menu_2'),
+      rederer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: "https://raw.githubusercontent.com/prayTiger/Json/main/table2.json"
+    });
+    var directionMenu = 1;
+    menu.addEventListener('mouseenter', (e) => {
+      animationMenu2.setDirection(directionMenu);
+      animationMenu2.play();
+    });
+
+    menu.addEventListener('mouseleave', (e) => {
+      animationMenu2.setDirection(-directionMenu);
+      animationMenu2.stop();
+    });
+    //3
+    var menu = document.querySelector('.bodymovinanim3');
+    var animationMenu3 = lottie.loadAnimation({
+      container: document.getElementById('menu_3'),
+      rederer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: "https://raw.githubusercontent.com/prayTiger/Json/main/table3.json"
+    });
+    var directionMenu = 1;
+    menu.addEventListener('mouseenter', (e) => {
+      animationMenu3.setDirection(directionMenu);
+      animationMenu3.play();
+    });
+
+    menu.addEventListener('mouseleave', (e) => {
+      animationMenu3.setDirection(-directionMenu);
+      animationMenu3.stop();
+    });
+    //4
+    var menu = document.querySelector('.bodymovinanim4');
+    var animationMenu4 = lottie.loadAnimation({
+      container: document.getElementById('menu_4'),
+      rederer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: "https://raw.githubusercontent.com/prayTiger/Json/main/table4.json"
+    });
+    var directionMenu = 1;
+    menu.addEventListener('mouseenter', (e) => {
+      animationMenu4.setDirection(directionMenu);
+      animationMenu4.play();
+    });
+
+    menu.addEventListener('mouseleave', (e) => {
+      animationMenu4.setDirection(-directionMenu);
+      animationMenu4.stop();
+    });
+    
   </script>
 
 </body>

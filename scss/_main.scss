@@ -1,7 +1,7 @@
 #main {
     body {
         height: 100vh;
-        
+
     }
 
     .box {
@@ -17,9 +17,16 @@
         .item {
             // margin-left: 2px;
             // margin-right: 2px;
-            
-            width: 18%;
+
+            width: 20%;
             transition: transform 0.3s ease;
+            background-image: url('/prayTiger/img/main/menu_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: rgba(0, 0, 0, .4);
+            background-blend-mode: multiply;
+
             a {
                 display: block;
                 height: 100vh;
@@ -44,22 +51,38 @@
                     transform: translate(-50%, -50%); //置中
                     transition: 0.5s;
                 }
+
                 // span:hover{
                 //     color: $color_y;
                 // }
             }
+            .ani{
+                width: 85%;
+            }
         }
-        .item:hover{
+
+        .item:hover {
             transform: scale(1.05);
-            a{
-                span{
+            
+            a {
+                span {
                     color: #fff;
                     -webkit-text-stroke: 0px #000;
-                    
+
                     //opacity: 1;
                 }
             }
         }
-
+        .menu:hover{
+            background-color: rgba(#fff, .4);
+            background-blend-mode: multiply;
+        }
+        .logo{
+            img{
+                width: 90%;
+            }
+        }
     }
+    
+    
 }

@@ -10,19 +10,19 @@ var animation = bodymovin.loadAnimation({
 });
 
 /*測試json*/
-var animation = bodymovin.loadAnimation({
-    container: document.getElementById('test'),
-    rederer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi6.json'
+// var animation = bodymovin.loadAnimation({
+//     container: document.getElementById('bao_bg'),
+//     rederer: 'svg',
+//     loop: true,
+//     autoplay: true,
+//     path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi6.json'
 
-});
+// });
 
 
 
 /*土地公*/
-function play1() {
+function playT1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -32,7 +32,7 @@ function play1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi1.json'
     });
 }
-function play1_1() {
+function playT1_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -42,7 +42,7 @@ function play1_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi1-1.json'
     });
 }
-function play1_2() {
+function playT1_2() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -52,7 +52,7 @@ function play1_2() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi1-2.json'
     });
 }
-function play2() {
+function playT2() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -62,7 +62,7 @@ function play2() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi2.json'
     });
 }
-function play2_1() {
+function playT2_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -72,7 +72,7 @@ function play2_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi2-1.json'
     });
 }
-function play3() {
+function playT3() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -82,7 +82,7 @@ function play3() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi3.json'
     });
 }
-function play3_1() {
+function playT3_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -92,7 +92,7 @@ function play3_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi3-1.json'
     });
 }
-function play4() {
+function playT4() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -102,7 +102,7 @@ function play4() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi4.json'
     });
 }
-function play4_1() {
+function playT4_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -112,7 +112,7 @@ function play4_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi4-1.json'
     });
 }
-function play4_2() {
+function playT4_2() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -122,7 +122,7 @@ function play4_2() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi4-2.json'
     });
 }
-function play5() {
+function playT5() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -132,7 +132,7 @@ function play5() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi5.json'
     });
 }
-function play5_1() {
+function playT5_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -142,7 +142,7 @@ function play5_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi5-1.json'
     });
 }
-function play6() {
+function playT6() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -152,7 +152,7 @@ function play6() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi6.json'
     });
 }
-function play6_1() {
+function playT6_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -162,7 +162,7 @@ function play6_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi6-1.json'
     });
 }
-function play7() {
+function playT7() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -172,7 +172,7 @@ function play7() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi7.json'
     });
 }
-function play7_1() {
+function playT7_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -182,7 +182,7 @@ function play7_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi7-1.json'
     });
 }
-function play8() {
+function playT8() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -192,7 +192,7 @@ function play8() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi8.json'
     });
 }
-function play8_1() {
+function playT8_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -202,7 +202,7 @@ function play8_1() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi8-1.json'
     });
 }
-function play9() {
+function playT9() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_bg'),
         rederer: 'svg',
@@ -212,7 +212,7 @@ function play9() {
         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/tudi9.json'
     });
 }
-function play9_1() {
+function playT9_1() {
     lottie.loadAnimation({
         container: document.getElementById('tudi_main'),
         rederer: 'svg',
@@ -223,7 +223,7 @@ function play9_1() {
     });
 }
 
-play1();
+playT1();
 
 let click = 0;
 let deleteBG = true;
@@ -236,7 +236,7 @@ function T_Previous() {
         click--;
         deleteBG = true;
         console.log("click=%d, deleteBG=t", click);
-        switchPage();
+        switchPageT();
     }
 
 }
@@ -246,14 +246,14 @@ function T_Next() {
         click++;
         deleteBG = false;
         console.log("click=%d, deleteBG=f", click);
-        switchPage();
+        switchPageT();
     } else {
         click = 11;
         console.log("click=%d", click);
     }
 }
 
-function switchPage() {
+function switchPageT() {
     switch (click) {
         case 0: {
             lottie.destroy('tudi1-1');
@@ -261,11 +261,11 @@ function switchPage() {
         }
         case 1: {
             if (deleteBG == false) {
-                play1_1();
+                playT1_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi1-2');
-                play1_1();
+                playT1_1();
                 lottie.play();
             }
             break;
@@ -273,13 +273,13 @@ function switchPage() {
         case 2: {
             if (deleteBG == false) {
                 lottie.destroy('tudi1-1');
-                play1_2();
+                playT1_2();
                 lottie.play();
             } else {
                 lottie.destroy('tudi2');
                 lottie.destroy('tudi2-1');
-                play1();
-                play1_2();
+                playT1();
+                playT1_2();
                 lottie.play();
             }
             break;
@@ -288,14 +288,14 @@ function switchPage() {
             if (deleteBG == false) {
                 lottie.destroy('tudi1-2');
                 lottie.destroy('tudi1')
-                play2();
-                play2_1();
+                playT2();
+                playT2_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi3');
                 lottie.destroy('tudi3-1');
-                play2();
-                play2_1();
+                playT2();
+                playT2_1();
                 lottie.play();
             }
             break;
@@ -304,14 +304,14 @@ function switchPage() {
             if (deleteBG == false) {
                 lottie.destroy('tudi2-1');
                 lottie.destroy('tudi2')
-                play3();
-                play3_1();
+                playT3();
+                playT3_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi4');
                 lottie.destroy('tudi4-1');
-                play3();
-                play3_1();
+                playT3();
+                playT3_1();
                 lottie.play();
             }
             break;
@@ -320,12 +320,12 @@ function switchPage() {
             if (deleteBG == false) {
                 lottie.destroy('tudi3-1');
                 lottie.destroy('tudi3');
-                play4();
-                play4_1();
+                playT4();
+                playT4_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi4-2');
-                play4_1();
+                playT4_1();
                 lottie.play();
             }
             break;
@@ -333,13 +333,13 @@ function switchPage() {
         case 6: {
             if (deleteBG == false) {
                 lottie.destroy('tudi4-1');
-                play4_2();
+                playT4_2();
                 lottie.play();
             } else {
                 lottie.destroy('tudi5');
                 lottie.destroy('tudi5-1');
-                play4();
-                play4_2();
+                playT4();
+                playT4_2();
                 lottie.play();
             }
             break;
@@ -348,14 +348,14 @@ function switchPage() {
             if (deleteBG == false) {
                 lottie.destroy('tudi4-2');
                 lottie.destroy('tudi4');
-                play5();
-                play5_1();
+                playT5();
+                playT5_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi6');
                 lottie.destroy('tudi6-1');
-                play5();
-                play5_1();
+                playT5();
+                playT5_1();
                 lottie.play();
             }
             break;
@@ -365,14 +365,14 @@ function switchPage() {
                 lottie.destroy('tudi5-1');
                 lottie.destroy('tudi5');
                 lottie.destroy('tudi7-1');
-                play6();
-                play6_1();
+                playT6();
+                playT6_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi7');
                 lottie.destroy('tudi7-1');
-                play6();
-                play6_1();
+                playT6();
+                playT6_1();
                 lottie.play();
             }
             break;
@@ -382,14 +382,14 @@ function switchPage() {
                 lottie.destroy('tudi6-1');
                 lottie.destroy('tudi6');
                 lottie.destroy('tudi8-1');
-                play7();
-                play7_1();
+                playT7();
+                playT7_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi8');
                 lottie.destroy('tudi8-1');
-                play7();
-                play7_1();
+                playT7();
+                playT7_1();
                 lottie.play();
             }
             break;
@@ -399,14 +399,14 @@ function switchPage() {
                 lottie.destroy('tudi7-1');
                 lottie.destroy('tudi7');
                 lottie.destroy('tudi9-1');
-                play8();
-                play8_1();
+                playT8();
+                playT8_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi9');
                 lottie.destroy('tudi9-1');
-                play8();
-                play8_1();
+                playT8();
+                playT8_1();
                 lottie.play();
             }
             break;
@@ -415,14 +415,14 @@ function switchPage() {
             if (deleteBG == false) {
                 lottie.destroy('tudi8-1');
                 lottie.destroy('tudi8');
-                play9();
-                play9_1();
+                playT9();
+                playT9_1();
                 lottie.play();
             } else {
                 lottie.destroy('tudi9-1');
                 lottie.destroy('tudi9');
-                play9();
-                play9_1();
+                playT9();
+                playT9_1();
                 lottie.play();
             }
             break;
@@ -431,8 +431,398 @@ function switchPage() {
 }
 
 
+/*保生大帝*/
+// function playB() {
+//     lottie.loadAnimation({
+//         container: document.getElementById('bao_bg'),
+//         rederer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         name: 'bao4',
+//         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4.json'
+//     });
+//     lottie.loadAnimation({
+//         container: document.getElementById('bao_main'),
+//         rederer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         name: 'bao4-2',
+//         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4-1.json'
+//     });
+//     lottie.loadAnimation({
+//         container: document.getElementById('bao_main2'),
+//         rederer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         name: 'bao4-3',
+//         path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao.json'
+//     });
+// }
+function playB1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao1.json'
+    });
+}
+function playB1_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao1-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao1-1.json'
+    });
+}
+function playB2() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao2',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao2.json'
+    });
+}
+function playB2_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao2-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao2-1.json'
+    });
+}
+function playB3() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao3',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao3.json'
+    });
+}
+function playB3_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao3-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao3-1.json'
+    });
+}
+function playB4() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao4',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4.json'
+    });
+}
+function playB4_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao4-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4-1.json'
+    });
+}
+function playB4_2() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao4-2',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4-2.json'
+    });
+}
+function playB4_3() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main2'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao4-3',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4-3.json'
+    });
+}
+function playB5() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao5',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao5.json'
+    });
+}
+function playB5_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao5-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao5-1.json'
+    });
+}
+function playB6() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao6',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao6.json'
+    });
+}
+function playB6_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao6-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao6-1.json'
+    });
+}
+function playB7() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao7',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao7.json'
+    });
+}
+function playB7_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao7-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao7-1.json'
+    });
+}
+function playB8() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao8',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao8.json'
+    });
+}
+function playB8_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao8-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao8-1.json'
+    });
+}
+function playB9() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_bg'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao9',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao9.json'
+    });
+}
+function playB9_1() {
+    lottie.loadAnimation({
+        container: document.getElementById('bao_main'),
+        rederer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'bao9-1',
+        path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao9-1.json'
+    });
+}
 
+// lottie.loadAnimation({
+//     container: document.getElementById('bao_main2'),
+//     rederer: 'svg',
+//     loop: true,
+//     autoplay: true,
+    
+//     path: 'https://raw.githubusercontent.com/prayTiger/Json/main/bao4-3.json'
+// });
+// playB();
 
+click = 0;
+deleteBG = true;
+function B_Previous() {
+    // lottie.destroy();
+    if (click <= 0) {
+        click = 0;
+        console.log("click=%d", click);
+    } else {
+        click--;
+        deleteBG = true;
+        console.log("click=%d, deleteBG=t", click);
+        switchPageB();
+    }
+
+}
+function B_Next() {
+    // lottie.destroy();
+    if (click < 10) {
+        click++;
+        deleteBG = false;
+        console.log("click=%d, deleteBG=f", click);
+        switchPageB();
+    } else {
+        click = 10;
+        console.log("click=%d", click);
+    }
+}
+
+function switchPageB(){
+    switch (click) {
+        case 0:{
+            lottie.destroy('bao1-1');
+            break;
+        }
+        case 1: {
+            if (deleteBG == false) {
+                playB1();
+                playB1_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 2: {
+            if (deleteBG == false) {
+                lottie.destroy('bao1');
+                lottie.destroy('bao1-1');
+                playB2();
+                playB2_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 3: {
+            if (deleteBG == false) {
+                lottie.destroy('bao2');
+                lottie.destroy('bao2-1');
+                playB3();
+                playB3_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 4: {
+            if (deleteBG == false) {
+                lottie.destroy('bao3');
+                lottie.destroy('bao3-1');
+                playB4();
+                playB4_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 5: {
+            if (deleteBG == false) {
+                lottie.destroy('bao4-1');
+                playB4_2();
+                playB4_3();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 6: {
+            if (deleteBG == false) {
+                lottie.destroy('bao4');
+                lottie.destroy('bao4-2');
+                lottie.destroy('bao4-3');
+                playB5();
+                playB5_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 7: {
+            if (deleteBG == false) {
+                lottie.destroy('bao5');
+                lottie.destroy('bao5-1');
+                playB6();
+                playB6_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 8: {
+            if (deleteBG == false) {
+                lottie.destroy('bao6');
+                lottie.destroy('bao6-1');
+                playB7();
+                playB7_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 9: {
+            if (deleteBG == false) {
+                lottie.destroy('bao7');
+                lottie.destroy('bao7-1');
+                playB8();
+                playB8_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+        case 10: {
+            if (deleteBG == false) {
+                lottie.destroy('bao8');
+                lottie.destroy('bao8-1');
+                playB9();
+                playB9_1();
+                lottie.play();
+            } else {
+                
+            }
+            break;
+        }
+    }
+}
 
 /*淡出效果*/
 window.addEventListener('scroll', reveal);

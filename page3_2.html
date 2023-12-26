@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img\favicon.ico" type="image/x-icon"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img\favicon.ico" type="image/x-icon" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
   <link rel="stylesheet" href="./css/all.css">
@@ -11,30 +12,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   
-    <title>祈虎TigerGod</title>
+
+  <title>祈虎TigerGod</title>
 </head>
-<body id="page3_2">
-    <div class="header">
-        <div class="logo "><a href="index.html"><img src="img\brand_logo.png" alt=""></a></div>
-        <div class="menu ">
-          <ul>
-            <li><a href="page1.html">認識虎爺</a></li>
-            <li><a href="page2.html">祭祀禮儀</a></li>
-            <li><a href="page3.html">傳說故事</a></li>
-            <li><a href="page4.html">尋找虎爺</a></li>
-          </ul>
+
+<body id="page3_2" style="overflow-y: hidden; overflow-x: hidden;">
+  <div class="header">
+    <div class="logo "><a href="index.html"><img src="img\brand_logo.png" alt=""></a></div>
+    <div class="menu ">
+      <ul>
+        <li><a href="page1.html">認識虎爺</a></li>
+        <li><a href="page2.html">祭祀禮儀</a></li>
+        <li><a href="page3.html">傳說故事</a></li>
+        <li><a href="page4.html">尋找虎爺</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <section>
+      <div class="box">
+        <div class="btn" onclick="B_Previous()">
+          <img src="img\page3\left.svg" alt="">
+        </div>
+        <div class="ani">
+          <div id="bao_bg"></div>
+          <div id="bao_main"></div>
+          <div id="bao_main2"></div>
+          <script src="./script.js"></script>
+
+          <div class="btn_back">
+            <a target="_self" href=page3.html><img src="img\back.svg" alt=""></a>
+          </div>
+
+        </div>
+        <div class="btn" onclick="B_Next()">
+          <img src="img\page3\right.svg" alt="">
         </div>
       </div>
-
-    <div class="content">
-      <div id="test" ></div>
-      <script src="./script.js"></script>
-    </div>
-
-    <div class="back">
-      <a target="_self" href=page3.html>back</a>
-    </div>
+    </section>
+  </div>
 
 </body>
-</html> 
+
+</html>
